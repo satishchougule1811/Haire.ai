@@ -88,3 +88,9 @@ nb-configuration.xml
 ## Miscellaneous
 ##############################
 *.log
+
+
+
+
+screenshot/
+log4j.properties
