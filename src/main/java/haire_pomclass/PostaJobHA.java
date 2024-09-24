@@ -77,11 +77,11 @@ public class PostaJobHA
 //            js.executeScript("window.scrollBy(500, 0);");
 		 
 		// WebElement Qualification=driver.findElement(By.xpath("//input[@id='qualification']"));
-		 WebElement Qualification=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/input[1]"));
-		 Qualification.click();
-		 Thread.sleep(1000);
-		 Qualification.sendKeys(Keys.ARROW_DOWN);
-	     Qualification.sendKeys(Keys.ENTER);
+//		 WebElement Qualification=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/input[1]"));
+//		 Qualification.click();
+//		 Thread.sleep(1000);
+//		 Qualification.sendKeys(Keys.ARROW_DOWN);
+//	     Qualification.sendKeys(Keys.ENTER);
 	     
 	     WebElement modeofwrok=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/span[1]/input[1]"));
 	     modeofwrok.click();
@@ -111,6 +111,10 @@ public class PostaJobHA
 		  currancy.sendKeys(Keys.ENTER);
 		  
 		  
+		  JavascriptExecutor js = (JavascriptExecutor) driver;
+          js.executeScript("window.scrollBy(0, 500);");
+	 
+		  
 		  WebElement checkbox=driver.findElement(By.xpath("//input[@type='checkbox']"));
 		  checkbox.click();
 		  
@@ -119,10 +123,11 @@ public class PostaJobHA
 		  
 		  Thread.sleep(1000);
 		  
-		  WebElement Generatewithai=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"));
+		  WebElement Generatewithai=driver.findElement(By.xpath("//button[@class='data_generator']"));
 		  Generatewithai.click();
+		  System.out.println("click on generatewitai");
 		  
-		  Thread.sleep(4000);
+		  Thread.sleep(5000);
 		  
 		  WebElement clickonnextbutton=driver.findElement(By.xpath("//button[@class='ant-btn css-17sses9 ant-btn-primary']"));
 		  clickonnextbutton.click();
@@ -134,16 +139,7 @@ public class PostaJobHA
 		  
 		  
 				
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		 
-	 
+	
 		}}
 	 
 

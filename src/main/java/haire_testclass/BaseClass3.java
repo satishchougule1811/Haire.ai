@@ -1,6 +1,6 @@
 package haire_testclass;
 
-import haire_pomclass.LoginPageHA;
+import haire_pomclass.JobSeekerLoginPage;
 import java.time.Duration;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 
-public class BaseClass {
+public class BaseClass3 {
   WebDriver driver;
   Logger log;
 
@@ -28,7 +28,7 @@ public class BaseClass {
     String currenturl = driver.getCurrentUrl();
     System.out.println("actual currenturl:" + currenturl);
 
-    LoginPageHA loginpage = new LoginPageHA(driver);
+    JobSeekerLoginPage loginpage = new JobSeekerLoginPage(driver);
     loginpage.loginbuttonm();
     loginpage.LogIN();
     loginpage.email();

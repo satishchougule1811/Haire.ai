@@ -1,15 +1,14 @@
 package haire_pomclass;
 
-import jdk.internal.org.jline.utils.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPageHA {
+public class JobSeekerLoginPage {
   WebDriver driver;
 
-  public LoginPageHA(WebDriver driver) {
+  public JobSeekerLoginPage(WebDriver driver) {
     this.driver = driver;
     PageFactory.initElements(driver, this);
   }
@@ -34,7 +33,7 @@ public class LoginPageHA {
   private WebElement emailtextbox;
 
   public void email() throws InterruptedException {
-    emailtextbox.sendKeys("satish@arcitech.ai");
+    emailtextbox.sendKeys("chougulesatish1811@gmail.com");
     Thread.sleep(1000);
   }
 
