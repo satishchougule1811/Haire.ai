@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="haire_testclass.TC07_VerifyUploadResume">
+      <class name="haire_testclass.TC08_VerifyReuploadingResume">
         <methods>
+          <include name="Verifyreuploadingresume"/>
           <include name="setup"/>
-          <include name="verifyuploadfresume"/>
         </methods>
-      </class> <!-- haire_testclass.TC07_VerifyUploadResume -->
+      </class> <!-- haire_testclass.TC08_VerifyReuploadingResume -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

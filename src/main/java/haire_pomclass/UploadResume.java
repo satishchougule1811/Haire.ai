@@ -13,18 +13,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UploadResume {
+  public class UploadResume {
   WebDriver driver;
 
-  public UploadResume(WebDriver driver) {
+    public UploadResume(WebDriver driver) {
     this.driver = driver;
     PageFactory.initElements(driver, this);
   }
 
-  @FindBy(xpath = "//label[text()='Upload Resume']")
-  private WebElement uploadresume;
+    @FindBy(xpath = "//label[text()='Upload Resume']")
+     private WebElement uploadresume;
 
-  public void uploadresume() throws InterruptedException, AWTException {
+    public void uploadresume() throws InterruptedException, AWTException {
     uploadresume.click();
     Thread.sleep(1000);
 
@@ -53,8 +53,8 @@ public class UploadResume {
     Thread.sleep(1000);
   }
 
-  @FindBy(xpath = "//input[@type='file' and @accept='image/jpeg, image/png']")
-  private WebElement uploadjobseekerprofile;
+    @FindBy(xpath = "//input[@type='file' and @accept='image/jpeg, image/png']")
+    private WebElement uploadjobseekerprofile;
 
     public void uploadjobseekerprofilem() throws InterruptedException {
    
@@ -100,13 +100,7 @@ public class UploadResume {
     
     Thread.sleep(1000);
     
-    
-    
-    
-    
-    
-    
-    
+   
     
   }
 }
