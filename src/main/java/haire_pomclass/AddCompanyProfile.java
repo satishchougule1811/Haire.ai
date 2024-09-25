@@ -56,7 +56,7 @@ public class AddCompanyProfile
       public void companyloactionm() throws InterruptedException 
       {
     	  Thread.sleep(2000);
-    	  companyloaction.click();
+   	  companyloaction.click();
     	  companyloaction.sendKeys("Mumbai");
 		  Thread.sleep(2000);
 		  companyloaction.sendKeys(Keys.ARROW_DOWN);
@@ -151,12 +151,12 @@ public class AddCompanyProfile
      
       
       WebElement clickoncheckbox=driver.findElement(By.xpath("//input[@id='terms']"));
-          Thread.sleep(2000);
-          clickoncheckbox.click();
+      Thread.sleep(2000);
+      clickoncheckbox.click();
   
           
           
-          WebElement SaveandContinue=driver.findElement(By.xpath("//button[text()='Save & Continue']"));
+      WebElement SaveandContinue=driver.findElement(By.xpath("//button[text()='Save & Continue']"));
       Thread.sleep(1000);
       SaveandContinue.click();
       
